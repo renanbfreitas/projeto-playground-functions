@@ -19,7 +19,7 @@ function concatName(names) {
   let name = [];
   name.push(names.splice(names.length - 1, 1)[0]);
   name.push(names.splice(0, 1)[0]);
-  return name.join(", ");
+  return name.join(', ');
 }
 
 // Desafio 5
@@ -47,9 +47,9 @@ function catAndMouse(mouse, cat1, cat2) {
   let cat2Pos = Math.abs(mouse - cat2);
   if (cat1Pos < cat2Pos) {
     return 'cat1';
-  } else if (cat1Pos > cat2Pos) {
-return 'cat2';
-}
+  } if (cat1Pos > cat2Pos) {
+    return 'cat2';
+  }
   return 'os gatos trombam e o rato foge';
 }
 
@@ -65,8 +65,8 @@ function fizzBuzz(arr) {
       arrResult.push('buzz');
     } else {
       arrResult.push('bug!');
-}
-}
+    }
+  }
   return arrResult;
 }
 
@@ -98,7 +98,7 @@ function techList(argArray, name) {
   for (let NomeTech of argArray) {
     let resultObject = {
       tech: NomeTech,
-      name: name
+      name,
     };
     resultArray.push(resultObject);
   }
